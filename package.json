@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --mode development --open --devtool cheap-module-source-map",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "tsc": "tsc -noEmit",
-    "lint" : "eslint --ext .ts,.tsx src/",
-    "lint:fix" : "eslint --ext .ts,.tsx src/ --fix"
+    "lint": "eslint --ext .ts,.tsx src/",
+    "lint:fix": "eslint --ext .ts,.tsx src/ --fix"
   },
   "repository": {
     "type": "git",
@@ -46,6 +48,9 @@
     "prettier": "^1.18.2",
     "react-docgen-typescript-loader": "^3.2.0",
     "ts-loader": "^6.0.4",
-    "typescript": "^3.6.2"
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
   }
 }
